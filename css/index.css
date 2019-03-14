@@ -158,7 +158,7 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .logo {
     display: flex;
-    margin-left: 100px;
+
 }
 
 .container {
@@ -175,7 +175,7 @@ nav {
 nav a {
     text-decoration: none;
     color: lightgray;
-    padding: 30px;
+    padding-right: 60px;
 }
 
 .demand-main {
@@ -184,7 +184,12 @@ nav a {
 }
 
 .demand {
-    display: flex font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -193,15 +198,18 @@ h1 {
 }
 
 .demand button {
-    display: block;
+    display:block;
     font-size: 20px;
-    margin-left: 60px;
     background-color: white;
-    padding: 5px 50px;
-     border: 1px solid black;
+    padding: 5px;
+    border-radius: 5%;
+    width: 150px;
+
 
 }
-
+button{
+     border: 1px solid black;
+}
 .features-about {
     display: flex;
     justify-content: space-around;
@@ -302,7 +310,7 @@ ul li {
 }
 
 .middle-img {
-    width: 910px;
+    width: 100%;
 }
 
 @media(max-width: 800px) {
@@ -312,10 +320,17 @@ ul li {
     .header-img{
         display: none;
     }
-    .demand-main{
-    margin-left: 150px;
+    .logo{
+        order: 1;
     }
-    .middle-img {
-    width: 580px;
-}
+    nav{
+        order: 2;
+    }
+    .demand-main{
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
 }
