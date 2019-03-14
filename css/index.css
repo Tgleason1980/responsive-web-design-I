@@ -198,7 +198,7 @@ h1 {
 }
 
 .demand button {
-    display:block;
+    display: block;
     font-size: 20px;
     background-color: white;
     padding: 5px;
@@ -207,9 +207,11 @@ h1 {
 
 
 }
-button{
-     border: 1px solid black;
+
+button {
+    border: 1px solid black;
 }
+
 .features-about {
     display: flex;
     justify-content: space-around;
@@ -317,47 +319,60 @@ ul li {
     header {
         flex-direction: column;
     }
-    .header-img{
+
+    .header-img {
         display: none;
     }
-    .logo{
+
+    .logo {
         order: 1;
     }
-    nav{
+
+    nav {
         order: 2;
     }
-    .demand-main{
+
+    .demand-main {
         justify-content: center;
     }
-    header{
+
+    header {
         display: flex;
         justify-content: center;
     }
 }
+
 @media(max-width: 500px) {
     header {
         flex-direction: column;
     }
-    .header-img{
+
+    .header-img {
         display: none;
     }
-    .logo{
+
+    .logo {
         order: 1;
     }
-    nav{
+
+    nav {
         order: 2;
     }
-    .demand-main{
+
+    .demand-main {
         justify-content: center;
     }
-    header{
+
+    header {
         display: flex;
         justify-content: center;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    nav a{
+
+    nav a {
         padding: 10px;
         border-bottom: 1px solid lightgray;
         border-top: 1px solid lightgray;
@@ -365,33 +380,40 @@ ul li {
         padding-left: 225px;
 
     }
-    .features-about{
+
+    .features-about {
         flex-direction: column;
     }
-    .features{
+
+    .features {
         order: 1;
         margin-bottom: 30px;
     }
-    .about{
+
+    .about {
         order: 2;
         margin-bottom: 30px;
     }
-    .services-vision{
+
+    .services-vision {
         flex-direction: column;
     }
-    .services{
+
+    .services {
         order: 1;
         margin-bottom: 30px;
     }
-    .product{
+
+    .product {
         order: 2;
         margin-bottom: 30px;
     }
-    .vision{
+
+    .vision {
         order: 3;
     }
-    .contact{
+
+    .contact {
         margin-top: 30px;
     }
 }
-
