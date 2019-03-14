@@ -1,3 +1,489 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.logo {
+    display: flex;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    padding-right: 60px;
+}
+
+.demand-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.demand {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 90px;
+    display: block;
+}
+
+.demand button {
+    display: block;
+    font-size: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5%;
+    width: 150px;
 
 
+}
+
+button {
+    border: 1px solid black;
+}
+
+.features-about {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    line-height: 20px;
+}
+
+.services-vision {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px;
+    line-height: 20px;
+}
+
+.services {
+    margin: 0px 20px 0px 0px;
+}
+
+.product {
+    margin: 0px 20px 0px 0px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-header header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    padding: 30px 0;
+
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectiion2 {
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+}
+
+.container3 {
+    display: flex;
+}
+
+.container4 {
+    display: flex;
+
+}
+
+.box {
+    border: 1px solid black;
+    margin: 10px;
+    background-color: lightgray;
+    display: block;
+    width: 50%;
+    padding: 10px
+}
+
+.facts {
+    margin: 0px 40px 0px 0px;
+}
+
+ul {
+    margin: 20px 0px;
+}
+
+ul li {
+    margin: 20px 20px;
+    list-style: disc;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        width: 500px;
+        padding-left: 225px;
+
+    }
+
+    .features-about {
+        flex-direction: column;
+    }
+
+    .features {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .services-vision {
+        flex-direction: column;
+    }
+
+    .services {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .product {
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .vision {
+        order: 3;
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+}
+/* Services page */
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .container4{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        width: 500px;
+        padding-left: 225px;
+
+    }
+}
