@@ -417,3 +417,73 @@ ul li {
         margin-top: 30px;
     }
 }
+/* Services page */
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .container4{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    .demand-main {
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        width: 500px;
+        padding-left: 225px;
+
+    }
+}
